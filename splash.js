@@ -21,7 +21,7 @@ window.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
       intro.style.top = "-100vh";
       setTimeout(() => {
-        window.location.href = "../main-page/main.html";
+        window.location.href = "./main-page/main.html";
       }, 700);
     }, 5000);
   });
