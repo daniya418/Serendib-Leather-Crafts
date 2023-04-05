@@ -67,7 +67,7 @@ document.querySelector("#carving").addEventListener("click", () => {
 });
 
 document.querySelector("#painting").addEventListener("click", () => {
-  document.location.href = "";
+  document.location.href = "../subpage-paintings danilka/subpaintings.html";
 });
 
 document.querySelector("#stamping").addEventListener("click", () => {
