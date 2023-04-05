@@ -1,0 +1,402 @@
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.logo-img {
+  width: 25px;
+  height: auto;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #1d212b;
+  box-sizing: border-box;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.logo > img {
+  width: 25px;
+  height: auto;
+}
+
+.logo > a {
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.logo-img,
+.logo-name {
+  float: left;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Poiret One", cursive;
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+}
+
+.header {
+  background-color: #f4f4f4;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+  color: darkgray;
+  /* transition: all 0.3s ease-in; */
+  font-weight: 500;
+}
+
+.header li a:hover {
+  border-bottom: 3px solid #723e31;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  color: #723e31;
+}
+
+.header .sub-text {
+  display: block;
+  font-size: 0.6em;
+  padding-top: 5px;
+}
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 350px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+@media (min-width: 820px) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+.title-container > img {
+  width: 100px;
+}
+
+.title-container {
+  font-family: "Poiret One", cursive;
+}
+
+.title-container > p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 25px;
+}
+
+.item {
+  text-align: center;
+  display: inline-block;
+  width: 130px;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.item > a {
+  color: gray;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.item > a:hover {
+  background-color: #fff;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* padding-top: 3px;
+  padding-bottom: 3px; */
+  border-radius: 20px;
+}
+
+.text-content {
+  text-align: justify;
+}
+
+.sub-nav-active {
+  background-color: #fff;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 20px;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.section-1 {
+  color: white;
+  font-size: 40px;
+}
+
+@media (max-width: 560px) {
+  .section-1 {
+    font-size: 20px;
+  }
+}
+
+.section-2 {
+  background: white;
+  color: #1d212b;
+}
+
+.container {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 973px) {
+  .container {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+.img-container {
+  display: flex;
+  gap: 50px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.image {
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.image > img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.image:hover {
+  transform: scale(1.05);
+}
+
+.image:hover .img-overlay-txt-con {
+  opacity: 1;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+/* Footer */
+
+footer {
+  background: #111;
+  height: auto;
+  width: 100%;
+  padding-top: 40px;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h3 {
+  font-family: "Poiret One", cursive;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.editorButton {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.editorButton:hover {
+  background: #000;
+  color: #fcfcfc;
+  cursor: pointer;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+  margin: 0 10px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.socials a i {
+  font-size: 1.1rem;
+  transition: color 0.4s ease;
+}
+
+.socials a:hover i {
+  color: aqua;
+}
+
+.footer-bottom {
+  background: #000;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.4;
+  font-weight: 200;
+}

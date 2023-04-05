@@ -1,0 +1,439 @@
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poiret+One&display=swap");
+
+body {
+  position: relative;
+  font-family: "Lato", sans-serif;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.logo > img {
+  width: 25px;
+  height: auto;
+}
+
+.logo > a {
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.logo-img,
+.logo-name {
+  float: left;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Poiret One", cursive;
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+}
+
+.header {
+  background-color: #f4f4f4;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+  color: darkgray;
+  transition: all 0.3s ease-in;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  color: #723e31;
+}
+
+.header .sub-text {
+  display: block;
+  font-size: 0.6em;
+  padding-top: 5px;
+}
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 350px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+.container {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 7rem;
+}
+
+.container > h1 {
+  text-align: center;
+  font-family: "Poiret One", cursive;
+}
+
+.checkout-container {
+  display: flex;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.cart-item {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 200px;
+}
+
+.cart-img {
+  width: 100px;
+  height: auto;
+}
+
+.cart-item-name {
+  font-size: 13px;
+}
+
+.cart-item-price {
+  font-family: "Poiret One", cursive;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.payment-container {
+  flex: 1;
+  background-color: whitesmoke;
+  padding: 10px;
+  text-align: center;
+}
+
+@media (max-width: 635px) {
+  .checkout-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.line {
+  width: 100%;
+  border: 1px solid gray;
+}
+
+.total {
+  font-family: "Poiret One", cursive;
+  font-weight: 600;
+}
+
+.detail-title {
+  font-size: 14px;
+  margin-top: 0;
+}
+.contact-detail-txt {
+  margin-top: 0;
+  font-size: 14px;
+  font-style: italic;
+  color: gray;
+}
+.address-edit-btn:hover {
+  opacity: 0.6;
+}
+.address-edit-btn {
+  margin-left: 10px;
+  width: 50px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.billing-title-lbl,
+.contact-title-lbl {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+#billingAddressTxt {
+  margin-top: 0;
+  font-size: 14px;
+  font-style: italic;
+  color: gray;
+}
+.form-btns-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.formBtn {
+  width: 130px;
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+}
+#cancelPaymentBtn {
+  background-color: transparent;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+#cancelPaymentBtn:hover {
+  background-color: gray;
+  color: white;
+}
+#cancelPaymentBtn:hover,
+#makePaymentBtn:hover {
+  opacity: 0.6;
+}
+#makePaymentBtn {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.label {
+  margin-top: 10px;
+}
+.error-msg {
+  font-size: 13px;
+  color: red;
+}
+.date-cvv-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+.date-container,
+.cvv-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.inputs {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: lightgray;
+  font-style: italic;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+.card-selction-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.card-type-img {
+  width: 100px;
+  height: 40px;
+  object-fit: contain;
+}
+#cardType {
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#cancelBtn:hover,
+#cancelBtn2:hover {
+  background-color: gray;
+  color: white;
+  border: 1px solid gray;
+}
+#cancelBtn,
+#cancelBtn2 {
+  padding: 10px;
+  border: 1px solid gray;
+  background-color: white;
+  color: black;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  border-radius: 30px;
+  width: 100px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+#confirmBtn:hover,
+#confirmBtn2:hover {
+  background-color: gray;
+  color: white;
+}
+#confirmBtn,
+#confirmBtn2 {
+  padding: 10px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  border-radius: 30px;
+  width: 100px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.address-pop-up-btns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.addressInputs {
+  width: 50vw;
+}
+#addressForm,
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.bi-x {
+  font-size: x-large;
+  cursor: pointer;
+}
+.popup-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.billing-address-popup {
+  padding-bottom: 30px;
+  display: none;
+  /* width: 500px; */
+  background-color: aqua;
+  /* height: 500px; */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  animation: myAnim 0.5s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: translateY(250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}

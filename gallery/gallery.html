@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="gallery.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="" class="logo"
+        >Serendib<span class="sub-text">Leather Co</span></a
+      >
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"
+        ><span class="navicon"></span
+      ></label>
+      <ul class="menu">
+        <li><a href="#work">Home</a></li>
+        <li><a href="#about">Shop</a></li>
+        <li><a href="#careers">Gallery</a></li>
+        <li><a href="#contact">Sitemap</a></li>
+        <li><a href="#contact">About</a></li>
+        <li>
+          <a href="#cart" class="cart"
+            ><i class="bi bi-cart"></i><span class="cart-indicator">0</span></a
+          >
+        </li>
+      </ul>
+    </header>
+    <div class="container">
+      <div class="starter-container">
+        <img src="assets/texture.jpg" alt="" />
+        <div class="starter-title">
+          <h1>Serendib Leather Co</h1>
+          <h2>Exclusive image gallery of out prestigious leather products</h2>
+        </div>
+      </div>
+      <div class="control-container">
+        <div class="settings-container">
+          <div class="theme-container">
+            <div class="font-picker">
+              <div class="font-range">
+                <input type="range" min="15" max="20" value="15" id="range" />
+              </div>
+              <div class="font"></div>
+            </div>
+            <div class="theme-picker">
+              <select name="theme-select" id="theme-select">
+                <option value="light" id="light">Light</option>
+                <option value="dark" id="dark">Dark</option>
+                <option value="blue">Peach</option>
+                <option value="pink">Latte</option>
+              </select>
+              <div class="theme-status">
+                <i class="bi bi-brightness-high-fill" id="sun"></i>
+                <i class="bi bi-moon-stars-fill" id="moon"></i>
+                <i class="bi bi-palette-fill"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--        Sections-->
+      <section class="mens-section">
+        <div class="mens-container">
+          <div class="mens-container-title">
+            <h1>Men's Leather</h1>
+            <hr class="solid" />
+          </div>
+          <div class="grid">
+            <div class="row">
+              <div class="card">
+                <img
+                  src="https://softlinebrandpartners.com/wp-content/uploads/2017/03/RW-SLG.jpg"
+                  alt="Card Image"
+                  class="image"
+                />
+                <div class="overlay">
+                  <h2>Mens Wallets</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dicta eligendi sed vero unde, harum natus at ea earum
+                    laudantium dolor, fugit hic fuga inventore ad deserunt.
+                    Saepe quasi doloribus ducimus.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0712/1227/collections/MensPageBanner_1800x.jpg?v=1659035366"
+                  alt="Card Image"
+                  class="image"
+                />
+                <div class="overlay">
+                  <h2>Mens Wallets</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dicta eligendi sed vero unde, harum natus at ea earum
+                    laudantium dolor, fugit hic fuga inventore ad deserunt.
+                    Saepe quasi doloribus ducimus.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0712/1227/products/breaker-lace-up-boot-canyon-portland-leather_3_x900.jpg?v=1676317606"
+                  alt="Card Image"
+                  class="image"
+                />
+                <div class="overlay">
+                  <h2>Mens Wallets</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dicta eligendi sed vero unde, harum natus at ea earum
+                    laudantium dolor, fugit hic fuga inventore ad deserunt.
+                    Saepe quasi doloribus ducimus.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0712/1227/products/deluxe-dopp-kit-portland-leather-27961942671442_x900.jpg?v=1658443520"
+                  alt="Card Image"
+                  class="image"
+                />
+                <div class="overlay">
+                  <h2>Mens Wallets</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dicta eligendi sed vero unde, harum natus at ea earum
+                    laudantium dolor, fugit hic fuga inventore ad deserunt.
+                    Saepe quasi doloribus ducimus.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0712/1227/products/canvas-rolltop-backpack--navy-coldbrew-portland-leather-_1_x900.jpg?v=1678219279"
+                  alt="Card Image"
+                  class="image"
+                />
+                <div class="overlay">
+                  <h2>Canvas Roll Top</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dicta eligendi sed vero unde, harum natus at ea earum
+                    laudantium dolor, fugit hic fuga inventore ad deserunt.
+                    Saepe quasi doloribus ducimus.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0712/1227/products/rolltop-backpack-sedona-portland-leather-3_x900.jpg?v=1675190933"
+                  alt="Card Image"
+                  class="image"
+                />
+                <div class="overlay">
+                  <h2>Leather Roll Top Backpack</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dicta eligendi sed vero unde, harum natus at ea earum
+                    laudantium dolor, fugit hic fuga inventore ad deserunt.
+                    Saepe quasi doloribus ducimus.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0712/1227/products/black-mens-daytripper-chelsea-boot-patina-8_x900.jpg?v=1660684787"
+                  alt="Card Image"
+                  class="image"
+                />
+                <div class="overlay">
+                  <h2>Welted Chelsea Boot</h2>
+                  <p>
+                    If we could own just one style of boot, it would be the
+                    Chelsea. Unfussy and ready for anything, our Welted
+                    Daytripper Chelsea Boot looks and feels great all
+                    year-round. Get them on and off with ease thanks to
+                    perfectly-proportioned elastic side panels and a leather
+                    pull tab.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0712/1227/products/cognac-laptop-backpack-portland-leather-5_x900.jpg?v=1678214537"
+                  alt="Card Image"
+                  class="image"
+                />
+                <div class="overlay">
+                  <h2>Laptop Backpack</h2>
+                  <p>
+                    This tall and slim-profile leather backpack was designed
+                    with the minimalist in mind. This backpack is perfect for
+                    the necessities, which might include files, folders, and a
+                    tablet or 13" laptop (based on MacBook Pro dimensions).
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0712/1227/products/beige-mens-canvas-low-top-sneaker-patina-2022_7-8-_4-of-4_x900.jpg?v=1658511806"
+                  alt="Card Image"
+                  class="image"
+                />
+                <div class="overlay">
+                  <h2>Men's Low Top Sneaker</h2>
+                  <p>
+                    In sneakers you can do almost anything, but our sneakers can
+                    also go anywhere. A sporty, minimalist design combined with
+                    refined leather means that these low-top sneakers are
+                    weekend warrior, date night and office ready.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mens-section">
+        <div class="mens-container">
+          <div class="mens-container-title">
+            <h1>Women's Leather</h1>
+            <hr class="solid" />
+          </div>
+          <div class="grid">
+            <div class="row">
+              <div class="card">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0712/1227/products/honey-mini-crossbody-tote-portland-leather-9_c0581128-b9a7-46c9-939c-ffe1046e57ed_x900.jpg?v=1677180282"
+                  alt="Card Image"
+                  class="image"
+                />
+                <div class="overlay">
+                  <h2>Mini Crossbody Tots</h2>
+                  <p>
+                    The Mini Crossbody is petite with a punch and tops the chart
+                    as our best-selling tote! Keep all of your belongings secure
+                    by choosing either the Classic Snap closure or our new
+                    Zipper option.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0712/1227/products/nutmeg-crossbody-tote-portland-leather-2_b027ad13-17ea-43f2-b71e-6eafac120f14_x900.jpg?v=1671223495"
+                  alt="Card Image"
+                  class="image"
+                />
+                <div class="overlay">
+                  <h2>Crossbody Tote</h2>
+                  <p>
+                    Our customers asked for a Crossbody Tote and we listened! An
+                    unfussy design that offers generous carrying capacity while
+                    maintaining a conveniently portable size, this is an ideal
+                    everyday bag. Equipped with both interior and exterior
+                    pockets, adjustable crossbody strap, and relaxed
+                    double-layer shoulder straps, the Crossbody Tote boasts
+                    unmatched versatility and comfort.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0712/1227/products/cognac-small-zip-wallet-portland-leather-2_6572631b-50b4-443f-85ef-a582dd5b634c_x900.jpg?v=1675189048"
+                  alt="Card Image"
+                  class="image"
+                />
+                <div class="overlay">
+                  <h2>Small Zip Wallet</h2>
+                  <p>
+                    Our Accordion Zip Wallet in compact form. This expandable
+                    design unzips to reveal a spacious interior. The Small
+                    Accordion Zip Wallet is perfectly organized with four
+                    dedicated card slots, two pockets for cash, and a zipper
+                    coin pocket!
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0712/1227/products/zip_tight_belt_bag_honey_studio_2022_9-30-18_fe3cc6b1-aa93-4cf9-b7de-288caec109fd_x900.jpg?v=1671563529"
+                  alt="Card Image"
+                  class="image"
+                />
+                <div class="overlay">
+                  <h2>Zip Tight Belt Bag</h2>
+                  <p>
+                    The idea of a belt bag floated around the workshop for
+                    years. But we wanted to be inspired! We aimed for a design
+                    that was easy to wear and also made us swoon – and, baby,
+                    we’re swooning!
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0712/1227/products/vero_bourbon_patina-9_x900.jpg?v=1678299459"
+                  alt="Card Image"
+                  class="image"
+                />
+                <div class="overlay">
+                  <h2>Vero</h2>
+                  <p>
+                    When wearing the Vero Boot, ideally, we'd love to jump on a
+                    Vespa and sip Amaretto while discussing art and
+                    philosophy...however, they have also been great for long
+                    days at the office!
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0712/1227/products/clove-38-40mm-stitched-watch-band-patina-1_x900.jpg?v=1676676047"
+                  alt="Card Image"
+                  class="image"
+                />
+                <div class="overlay">
+                  <h2>Leather Apple Watchband</h2>
+                  <p>
+                    When it comes to watch bands, leather is the best choice for
+                    comfortable and attractive all-day wear. Featuring
+                    full-grain, oil and wax finished leather and neutral dark
+                    hardware. Your wrist will thank you!
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0712/1227/products/womens_zoe_chunky_loafer_brick_studio_2022_9-30-17_bf22c369-d1cf-4a3a-aadf-98ceca7b65e7_x900.jpg?v=1678744219"
+                  alt="Card Image"
+                  class="image"
+                />
+                <div class="overlay">
+                  <h2>Zoe Chunky Loafer</h2>
+                  <p>
+                    Step right up – the Zoe Chunky Loafer has arrived! We can't
+                    get enough of the classic loafer upper paired with an
+                    all-weather-loving, lug sole. Easily the hottest style this
+                    season but with our commitment to comfort and quality, we
+                    stand taller than the rest!
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0712/1227/products/nutmeg-bucket-backpack-portland-leather-6_x900.jpg?v=1669157430"
+                  alt="Card Image"
+                  class="image"
+                />
+                <div class="overlay">
+                  <h2>Bucket Backpack</h2>
+                  <p>
+                    Tour Bucket Backpack is an effortless hands-free bag you'll
+                    want to grab everyday. The casual design features a relaxed
+                    leather drawstring opening with a sturdy magnetic flap
+                    closure, securely holding your essentials. The sleek inside
+                    pocket is the perfect size for carrying your cell phone
+                    allowing for easy access.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mens-section">
+        <div class="mens-container">
+          <div class="mens-container-title">
+            <h1>Other Leather Products</h1>
+            <hr class="solid" />
+          </div>
+          <div class="grid">
+            <div class="row">
+              <div class="card">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0712/1227/products/airpods-case-2nd-generation-patina-1-3_x900.jpg?v=1649280284"
+                  alt="Card Image"
+                  class="image"
+                />
+                <div class="overlay">
+                  <h2>Leather Airpods Case</h2>
+                  <p>
+                    Give your technology the timeless leather treatment. Made
+                    from premium full-grain oil-waxed leather, our AirPod Case
+                    will develop a beautiful patina over time. Whether you are
+                    transporting or charging, your earbuds will be snug and
+                    protected.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0712/1227/products/refill-for-leather-journal-portland-leather-14517073477714_x900.jpg?v=1629822356"
+                  alt="Card Image"
+                  class="image"
+                />
+                <div class="overlay">
+                  <h2>Refill for Leather Journal</h2>
+                  <p>
+                    Refills for our Leather Journals to keep your thoughts
+                    flowing! Each journal includes one free booklet of unlined
+                    paper. Our journals are refillable, which means that you can
+                    replace the booklets as fast as you can fill them up!
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0712/1227/products/leather-milk-healing-balm-portland-leather-1_x900.jpg?v=1660931171"
+                  alt="Card Image"
+                  class="image"
+                />
+                <div class="overlay">
+                  <h2>Leather Milk Healing Balm</h2>
+                  <p>
+                    Leather Milk Healing Balm is made to protect, soften, and
+                    moisturize your leather product to keep it looking great for
+                    years to come. Whether your leather has scratches, scars,
+                    light cracks in the hide, or is just thirsty - Healing Balm
+                    will enrich your leather's finish and make blemishes
+                    disappear with just one application.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0712/1227/products/bag-strap-trailblazers-black-blue-brown-gold-green-orange-yellow-portland-leather-1_x900.jpg?v=1656612952"
+                  alt="Card Image"
+                  class="image"
+                />
+                <div class="overlay">
+                  <h2>Trailblazer Strap</h2>
+                  <p>
+                    For folks that know what they want - and go for it! Woven in
+                    a cotton-poly blend, the Trailblazer Strap works with any of
+                    our crossbody totes and can be adjusted to suit your
+                    carrying style. Durable swivel clasps make switching out
+                    straps effortless and the leather logo badge keeps it all in
+                    the family.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0712/1227/products/almost-perfect-leather-artist-pencil-case-portland-leather-16104484700242_c38fed80-1a0c-468c-bc81-6d65d9e7a8b5_x900.jpg?v=1669222528"
+                  alt="Card Image"
+                  class="image"
+                />
+                <div class="overlay">
+                  <h2>Leather Artist Pencil Case</h2>
+                  <p>
+                    Our full-grain leather Artist wrap-pencil case is the
+                    perfect case for creatives. Use it to store art supplies,
+                    makeup brushes, glasses... you name it! We use the finest,
+                    most durable leather with our products.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0712/1227/products/honey-wine-tote-portland-leather-3_52d186dc-bd6a-4a7f-b58e-bdc193092315_x900.jpg?v=1654720920"
+                  alt="Card Image"
+                  class="image"
+                />
+                <div class="overlay">
+                  <h2>Leather Wine Tote</h2>
+                  <p>
+                    A tote specially designed for a bottle of wine - why didn’t
+                    we think of this sooner? Whether you prefer red, white, or
+                    bubbles, our sturdy wine tote will elevate any bottle.
+                    Features a reinforced bottom, stitching detail, and a
+                    wrap-and-snap closure. Designed to last forever and age
+                    beautifully, this makes a fantastic housewarming or
+                    anniversary gift - just add the wine!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="gallery.js"></script>
+  </body>
+</html>

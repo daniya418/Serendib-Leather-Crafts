@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link rel="stylesheet" href="shop.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- <body> -->
+    <header class="header">
+      <div class="logo">
+        <img src="../images/Asset_3.svg" alt="" class="logo-img" />
+        <a href="#" class="logo-name"
+          >Serendib <span class="sub-text">Leather Crafts</span></a
+        >
+      </div>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"
+        ><span class="navicon"></span
+      ></label>
+      <ul class="menu">
+        <li><a href="../main-page/main.html">Home</a></li>
+        <li><a href="#Comments">Comments</a></li>
+        <li><a href="#shop" class="active-nav">Shop</a></li>
+        <li><a href="#quiz">Quiz</a></li>
+        <li><a href="#sitemap">Sitemap</a></li>
+        <li><a href="#aboutus">About Us</a></li>
+      </ul>
+    </header>
+    <div class="shop-container">
+      <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <div class="cart-content"></div>
+        <!-- Total -->
+        <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">$0</div>
+        </div>
+        <!-- Buy Button -->
+        <div class="cart-btn-container">
+          <button type="button" class="btn-clear">Clear Cart</button>
+          <button type="button" class="btn-buy">Buy Now</button>
+        </div>
+        <!-- Cart Close -->
+        <i class="bi bi-x-lg" id="close-cart"></i>
+      </div>
+      <div class="shop-toolbar">
+        <h2>Shop</h2>
+        <input type="text" placeholder="Search" id="shopSearchBox" />
+        <i class="bi bi-search"></i>
+        <i class="bi bi-cart-fill" id="cartIcn"
+          ><span id="cartItemIndicator">0</span></i
+        >
+      </div>
+      <!-- Mens Leather Shop Section -->
+      <h1 class="item-section-title">-Mens Leather Products-</h1>
+      <div class="shop-content">
+        <div class="card-container">
+          <div class="card">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0712/1227/products/cognac-mens-breaker-lace-up-boot-patina-2_x900.jpg?v=1676317606"
+              alt="product image"
+              class="product-img"
+            />
+            <div class="card-body">
+              <h3 class="card-title">BREAKER BOOT</h3>
+              <p class="card-price">$29.99</p>
+              <button class="add-to-cart-btn">
+                Add to Cart<i class="bi bi-bag-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0712/1227/products/canvas-rolltop-backpack-navy-coldbrew-portland-leather-4_2_x900.jpg?v=1679353973"
+              alt="product image"
+              class="product-img"
+            />
+            <div class="card-body">
+              <h3 class="card-title">CANVAS ROLLTOP BACKPACK</h3>
+              <p class="card-price">$220</p>
+              <button class="add-to-cart-btn">
+                Add to Cart<i class="bi bi-bag-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0712/1227/products/canvas-crossbody-coal-pebbled-black-tote-portland-leather-4_2_x900.jpg?v=1674669215"
+              alt="product image"
+              class="product-img"
+            />
+            <div class="card-body">
+              <h3 class="card-title">CANVAS CROSSBODY TOTE</h3>
+              <p class="card-price">$120</p>
+              <button class="add-to-cart-btn">
+                Add to Cart<i class="bi bi-bag-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0712/1227/products/canvas-L-drip-drop-canvas-dopp-kit-1_x900.jpg?v=1679353612"
+              alt="product image"
+              class="product-img"
+            />
+            <div class="card-body">
+              <h3 class="card-title">DRIP DROP CANVAS DROPP KIT</h3>
+              <p class="card-price">$120</p>
+              <button class="add-to-cart-btn">
+                Add to Cart<i class="bi bi-bag-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0712/1227/products/mens-brooklyn-lace-up-boot-patina-1-1_x900.jpg?v=1651870159"
+              alt="product image"
+              class="product-img"
+            />
+            <div class="card-body">
+              <h3 class="card-title">WELTED BROOKLYN BOOT</h3>
+              <p class="card-price">$168</p>
+              <button class="add-to-cart-btn">
+                Add to Cart<i class="bi bi-bag-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0712/1227/products/coldbrew-rolltop-backpack-portland-leather-1_0c9bb3ae-879d-416c-89e9-af012f28000d_x900.jpg?v=1669222134"
+              alt="product image"
+              class="product-img"
+            />
+            <div class="card-body">
+              <h3 class="card-title">LEATHER ROLLTOP BACKPACK</h3>
+              <p class="card-price">$120</p>
+              <button class="add-to-cart-btn">
+                Add to Cart<i class="bi bi-bag-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0712/1227/products/mens-leather-low-top-sneaker-patina-1-4_eb20e557-29c0-4a82-99cb-36f99ccc9291_x900.jpg?v=1658511806"
+              alt="product image"
+              class="product-img"
+            />
+            <div class="card-body">
+              <h3 class="card-title">MEN'S LOW TOP SNEAKER</h3>
+              <p class="card-price">$128</p>
+              <button class="add-to-cart-btn">
+                Add to Cart<i class="bi bi-bag-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0712/1227/products/bifold-leather-wallet-portland-leather-16032046252114_x900.jpg?v=1654894636"
+              alt="product image"
+              class="product-img"
+            />
+            <div class="card-body">
+              <h3 class="card-title">BIFLOD LEATHER WALLET</h3>
+              <p class="card-price">$42</p>
+              <button class="add-to-cart-btn">
+                Add to Cart<i class="bi bi-bag-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Womens Leather Products Section -->
+      <h1 class="item-section-title">-Womens Leather Products-</h1>
+      <div class="shop-content">
+        <div class="card-container">
+          <div class="card">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0712/1227/products/nutmeg-classic-tote-portland-leather-1_41e47942-72c9-45c5-8a83-9f10382e2124_x900.jpg?v=1654888484"
+              alt="product image"
+              class="product-img"
+            />
+            <div class="card-body">
+              <h3 class="card-title">LEATHER TOTE BAG</h3>
+              <p class="card-price">$136</p>
+              <button class="add-to-cart-btn">
+                Add to Cart<i class="bi bi-bag-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0712/1227/products/circle-crossbody-portland-leather-15861183250514_70d14f9a-c1bb-4314-838b-4abf5bde0c15_x900.jpg?v=1677018653"
+              alt="product image"
+              class="product-img"
+            />
+            <div class="card-body">
+              <h3 class="card-title">CIRCLE CROSSBODY</h3>
+              <p class="card-price">$88</p>
+              <button class="add-to-cart-btn">
+                Add to Cart<i class="bi bi-bag-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0712/1227/products/canvas-crossbody-coal-pebbled-black-tote-portland-leather-4_2_x900.jpg?v=1674669215"
+              alt="product image"
+              class="product-img"
+            />
+            <div class="card-body">
+              <h3 class="card-title">CANVAS CROSSBODY TOTE</h3>
+              <p class="card-price">$120</p>
+              <button class="add-to-cart-btn">
+                Add to Cart<i class="bi bi-bag-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0712/1227/products/accordion-zip-wallet-portland-leather-27959808852050_x900.jpg?v=1677525040"
+              alt="product image"
+              class="product-img"
+            />
+            <div class="card-body">
+              <h3 class="card-title">ACCORDIAN ZIP WALLET</h3>
+              <p class="card-price">$98</p>
+              <button class="add-to-cart-btn">
+                Add to Cart<i class="bi bi-bag-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0712/1227/products/medium-crossbody-mystery-box_4-portland-leather-1_x900.jpg?v=1671222514"
+              alt="product image"
+              class="product-img"
+            />
+            <div class="card-body">
+              <h3 class="card-title">MEDIUM MYSTERY BOX</h3>
+              <p class="card-price">$148</p>
+              <button class="add-to-cart-btn">
+                Add to Cart<i class="bi bi-bag-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0712/1227/products/sunflower-alpine-pouch-portland-leather-3_x900.jpg?v=1664491421"
+              alt="product image"
+              class="product-img"
+            />
+            <div class="card-body">
+              <h3 class="card-title">ALPINE POUCH</h3>
+              <p class="card-price">$32</p>
+              <button class="add-to-cart-btn">
+                Add to Cart<i class="bi bi-bag-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0712/1227/products/ankle-wrap-bourbon-mule-patina-3_3_x900.jpg?v=1678143217"
+              alt="product image"
+              class="product-img"
+            />
+            <div class="card-body">
+              <h3 class="card-title">ANKLE WRAP HEEL</h3>
+              <p class="card-price">$160</p>
+              <button class="add-to-cart-btn">
+                Add to Cart<i class="bi bi-bag-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0712/1227/products/classic-ankle-boot-bone-patina-4_3_x900.jpg?v=1678903587"
+              alt="product image"
+              class="product-img"
+            />
+            <div class="card-body">
+              <h3 class="card-title">VERO BOOT</h3>
+              <p class="card-price">$198</p>
+              <button class="add-to-cart-btn">
+                Add to Cart<i class="bi bi-bag-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Small Leather Products Section -->
+      <h1 class="item-section-title">-Other Leather Products-</h1>
+      <div class="shop-content">
+        <div class="card-container">
+          <div class="card">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0712/1227/products/canyon-sunglass-case-portland-leather-2_x900.jpg?v=1677004173"
+              alt="product image"
+              class="product-img"
+            />
+            <div class="card-body">
+              <h3 class="card-title">SUNGLASS CASE</h3>
+              <p class="card-price">$26</p>
+              <button class="add-to-cart-btn">
+                Add to Cart<i class="bi bi-bag-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0712/1227/products/honey-double-macbook-case-portland-leather-4_4_x900.jpg?v=1678828773"
+              alt="product image"
+              class="product-img"
+            />
+            <div class="card-body">
+              <h3 class="card-title">DOUBLE ZIP MACBOOK CASE</h3>
+              <p class="card-price">$98</p>
+              <button class="add-to-cart-btn">
+                Add to Cart<i class="bi bi-bag-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0712/1227/products/wine_tote_honey_black_cognac_canyon_WO_2022_4-21-2_x900.jpg?v=1654886620"
+              alt="product image"
+              class="product-img"
+            />
+            <div class="card-body">
+              <h3 class="card-title">LEATHER WINE TOTE</h3>
+              <p class="card-price">$43.50</p>
+              <button class="add-to-cart-btn">
+                Add to Cart<i class="bi bi-bag-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0712/1227/products/leather-watch-bands-38-40mm-eggplant-patina_2_x900.jpg?v=1679435444"
+              alt="product image"
+              class="product-img"
+            />
+            <div class="card-body">
+              <h3 class="card-title">SLIM APPLE WATCH BAND</h3>
+              <p class="card-price">$48</p>
+              <button class="add-to-cart-btn">
+                Add to Cart<i class="bi bi-bag-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0712/1227/products/cognac-small-tassel-keychain-portland-leather-16178874286162_63457fa9-0f50-4f8e-8e1e-94c088fe7450_x900.jpg?v=1673994533"
+              alt="product image"
+              class="product-img"
+            />
+            <div class="card-body">
+              <h3 class="card-title">TASSEL KEYCHAIN</h3>
+              <p class="card-price">$148</p>
+              <button class="add-to-cart-btn">
+                Add to Cart<i class="bi bi-bag-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0712/1227/products/honey-luggage-tag-portland-leather-5_2_x900.jpg?v=1668613586"
+              alt="product image"
+              class="product-img"
+            />
+            <div class="card-body">
+              <h3 class="card-title">LEATHER LUGGAGE TAG</h3>
+              <p class="card-price">$22</p>
+              <button class="add-to-cart-btn">
+                Add to Cart<i class="bi bi-bag-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0712/1227/products/canyon-short-plg-keychain-portland-leather-14517038678098_5d715d23-82ea-409c-8cb8-5204dbc77fad_x900.jpg?v=1634880404"
+              alt="product image"
+              class="product-img"
+            />
+            <div class="card-body">
+              <h3 class="card-title">PLG KEYCHAIN</h3>
+              <p class="card-price">$16</p>
+              <button class="add-to-cart-btn">
+                Add to Cart<i class="bi bi-bag-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Pop Up Modal for Contact Details -->
+    <div class="billing-address-popup" id="contactPopup">
+      <div class="popup-title-container">
+        <h2>Contact Details</h2>
+        <i class="bi bi-x" id="closeContactPopup"></i>
+      </div>
+      <div class="line"></div>
+      <form action="payment.html" method="get" id="contactForm">
+        <label for="personName" class="label"
+          >Name <span class="error-msg">*</span></label
+        >
+        <input
+          type="text"
+          name="personName"
+          id="personName"
+          class="inputs addressInputs"
+          required
+        />
+        <label for="email" class="label">Email <span class="error-msg">*</span></label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="inputs addressInputs"
+          required
+        />
+        <div class="address-pop-up-btns">
+          <button type="button" id="cancelBtn2">Cancel</button>
+          <button type="submit" id="confirmBtn2">Proceed to Checkout</button>
+        </div>
+      </form>
+    </div>
+    <footer>
+      <div class="footer-content">
+        <h3>Serendib Leather Crafting</h3>
+        <p>Best Hand Crafted Leather Products in Sri Lanka.</p>
+
+        <button class="editorButton">Editor's Page</button>
+
+        <ul class="socials">
+          <li>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="bi bi-google"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          copyright &copy;2023 serendibleathercrafts. Designed by
+          <span>Team D</span>
+        </p>
+      </div>
+    </footer>
+    <script src="shop.js"></script>
+  </body>
+</html>

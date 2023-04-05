@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <link rel="stylesheet" href="payment.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="../images/Asset_3.svg" alt="" class="logo-img" />
+        <a href="#" class="logo-name"
+          >Serendib <span class="sub-text">Leather Crafts</span></a
+        >
+      </div>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"
+        ><span class="navicon"></span
+      ></label>
+      <ul class="menu">
+        <li><a href="#work">Home</a></li>
+        <li><a href="#about">Shop</a></li>
+        <li><a href="#careers">Gallery</a></li>
+        <li><a href="#contact">Sitemap</a></li>
+        <li><a href="#contact">About</a></li>
+      </ul>
+    </header>
+    <div class="container">
+      <h1>Checkout</h1>
+      <div class="checkout-container">
+        <div class="cart-container">
+          <div class="cart"></div>
+          <div class="line"></div>
+          <p class="total">Total : $100</p>
+        </div>
+        <div class="payment-container">
+          <h2>Payment Details</h2>
+          <form action="paymentSuccess.html" method="GET" id="form">
+            <div class="card-selction-container">
+              <select name="cardType" id="cardType">
+                <option value="visa">Visa</option>
+                <option value="master">Master</option>
+                <option value="americanExpress">American Express</option>
+              </select>
+              <img
+                class="card-type-img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/1200px-Visa_Inc._logo.svg.png?20170118154621"
+                alt=""
+              />
+            </div>
+            <label for="cardNumber" class="label"
+              >Card Number
+              <span class="error-msg" id="cardErrorMsg">*</span></label
+            >
+            <input
+              type="text"
+              class="inputs"
+              id="cardNumber"
+              placeholder="Ex: 0000-0000-0000-0000"
+              maxlength="16"
+              minlength="16"
+              required
+            />
+            <label for="holderName" class="label"
+              >Holders Name <span class="error-msg">*</span></label
+            >
+            <input
+              type="text"
+              class="inputs"
+              id="holderName"
+              placeholder="Ex: John Wick"
+              required
+            />
+            <div class="date-cvv-container">
+              <div class="date-container">
+                <label for="expireDate" class="label"
+                  >Expire Date
+                  <span class="error-msg" id="dateErrorMsg">*</span></label
+                >
+                <input type="month" class="inputs" id="expireDate" />
+              </div>
+              <div class="cvv-container">
+                <label for="cvv" class="label"
+                  >CVV <span class="error-msg" id="cvvErrorMsg">*</span></label
+                >
+                <input
+                  type="number"
+                  class="inputs"
+                  id="cvv"
+                  placeholder="Ex: 000"
+                  required
+                  max="999"
+                  min="100"
+                />
+              </div>
+            </div>
+            <div class="billing-address-container">
+              <div class="billing-title-lbl">
+                <p>
+                  Billing Details
+                  <span class="error-msg">*</span>
+                </p>
+                <button
+                  type="button"
+                  class="address-edit-btn"
+                  id="addressEditBtn"
+                >
+                  Edit
+                </button>
+                <span class="error-msg" id="addressErrorMsg"></span>
+              </div>
+              <p id="billingAddressTxt">Your address comes here</p>
+            </div>
+            <div class="contact-details-container">
+              <div class="contact-title-lbl">
+                <p>
+                  Contact Details
+                  <span class="error-msg">*</span>
+                </p>
+                <button
+                  type="button"
+                  class="address-edit-btn"
+                  id="contactEditBtn"
+                >
+                  Edit
+                </button>
+                <span class="error-msg" id="contactErrorMsg"></span>
+              </div>
+              <p class="detail-title">
+                Name:
+                <span class="contact-detail-txt" id="nameTxt"
+                  >Ex: John Wick</span
+                >
+              </p>
+              <p class="detail-title">
+                Email:
+                <span class="contact-detail-txt" id="emailTxt"
+                  >Ex: someone@example.com</span
+                >
+              </p>
+              <p class="detail-title">
+                Contact:
+                <span class="contact-detail-txt" id="contactNumTxt"
+                  >Ex: +(00)-0000-0000</span
+                >
+              </p>
+            </div>
+            <div class="form-btns-container">
+              <button type="button" id="cancelPaymentBtn" class="formBtn">
+                Cancel Payment
+              </button>
+              <button type="submit" id="makePaymentBtn" class="formBtn">
+                Make Payment
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Pop Up Modal for Billing Address -->
+    <div class="billing-address-popup" id="addressPopup">
+      <div class="popup-title-container">
+        <h2>Billing Address</h2>
+        <i class="bi bi-x" id="closeBillingPopup"></i>
+      </div>
+      <div class="line"></div>
+      <form action="payment.html" method="get" id="addressForm">
+        <label for="addressLine1" class="label"
+          >Address Line 1
+          <span class="error-msg" id="addressL1Error">*</span></label
+        >
+        <input
+          type="text"
+          name="addressLine1"
+          id="addressLine1"
+          class="inputs addressInputs"
+          required
+        />
+        <label for="addressLine2" class="label"
+          >Address Line 2 (Optional)</label
+        >
+        <input
+          type="text"
+          name="addressLine2"
+          id="addressLine2"
+          class="inputs addressInputs"
+        />
+        <label for="addressLine3" class="label">Address Line 3</label>
+        <input
+          type="text"
+          name="addressLine3"
+          id="addressLine3"
+          class="inputs addressInputs"
+        />
+        <label for="townCity" class="label"
+          >Town/City <span class="error-msg" id="townCityError">*</span></label
+        >
+        <input
+          type="text"
+          name="townCity"
+          id="townCity"
+          class="inputs addressInputs"
+          required
+        />
+        <label for="stateRegion" class="label">State/Region</label>
+        <input
+          type="text"
+          name="stateRegion"
+          id="stateRegion"
+          class="inputs addressInputs"
+        />
+        <label for="postalZipCode" class="label"
+          >Postal/Zip Code
+          <span class="error-msg" id="postalZipCodeError">*</span></label
+        >
+        <input
+          type="number"
+          name="postalZipCode"
+          id="postalZipCode"
+          class="inputs addressInputs"
+          required
+        />
+        <label for="country" class="label"
+          >Country <span class="error-msg" id="countryError">*</span></label
+        >
+        <input
+          type="text"
+          name="country"
+          id="country"
+          class="inputs addressInputs"
+          required
+        />
+        <div class="address-pop-up-btns">
+          <button type="button" id="cancelBtn">Cancel</button>
+          <button type="submit" id="confirmBtn">Confirm</button>
+        </div>
+      </form>
+    </div>
+    <!-- Pop Up Modal for Contact Details -->
+    <div class="billing-address-popup" id="contactPopup">
+      <div class="popup-title-container">
+        <h2>Contact Details</h2>
+        <i class="bi bi-x" id="closeContactPopup"></i>
+      </div>
+      <div class="line"></div>
+      <form action="payment.html" method="get" id="contactForm">
+        <label for="personName" class="label"
+          >Name <span class="error-msg">*</span></label
+        >
+        <input
+          type="text"
+          name="personName"
+          id="personName"
+          class="inputs addressInputs"
+          required
+        />
+        <label for="email" class="label">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="inputs addressInputs"
+          required
+        />
+        <label for="contactNum" class="label">Contact Number</label>
+        <input
+          type="number"
+          name="contactNum"
+          id="contactNum"
+          class="inputs addressInputs"
+          required
+        />
+        <div class="address-pop-up-btns">
+          <button type="button" id="cancelBtn2">Cancel</button>
+          <button type="submit" id="confirmBtn2">Confirm</button>
+        </div>
+      </form>
+    </div>
+    <script type="module" src="payment.js"></script>
+  </body>
+</html>
